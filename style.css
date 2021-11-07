@@ -1,0 +1,76 @@
+.sky {
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(121, 221, 235);
+    overflow: hidden;
+    animation-name: skyColor;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.green-1 {
+    width: 100%;
+    height: 5vh;
+    background-color: green;
+}
+
+.road {
+    width: 100%;
+    height: 15vh;
+    background-color: grey;
+}
+
+.green-2 {
+    width: 100%;
+    height: 10vh;
+    background-color: green;
+}
+
+.ground {
+    width: 100%;
+    height: 20vh;
+    background-color: rgb(75, 46, 1);
+}
+
+.sun {
+    margin-left: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    border-radius: 50%;
+    position: relative;
+    animation-name: sunShine;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    box-shadow: 1px 10px 100px gold;
+}
+
+svg {
+    padding-top: 30px;
+  text-align: center;
+    animation-name: carMovement;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: relative;
+    bottom: 80px;
+}
+
+@keyframes sunShine {
+    from {top: 100%;}
+    to {top: 0%}
+}
+
+@keyframes skyColor {
+    10% {background-color: rgb(96, 176, 187);}
+    30% {background-color: rgb(84, 155, 221);}
+    50% {background-color: rgb(49, 89, 126);}
+    100% {background-color: rgb(23, 35, 75);}
+}
+
+@keyframes carMovement {
+    0% {margin-left: 0;}
+    100% {margin-left: 100%;}
+}
